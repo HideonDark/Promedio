@@ -1,0 +1,98 @@
+import java.util.Scanner;
+
+public class Calificacion {
+    public static void main(String[] args)
+    {
+            System.out.println("\033[46m                    Calcula tu calificación                      \n");
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("\033[41m \033[37m 1." + "\033[42m\033[30m Calcular Calificacion  ");
+        System.out.println("\033[41m \033[37m 2." + "\033[42m\033[30m Salir                  ");
+        
+        int opcion = teclado.nextInt();
+        if(opcion == 2){
+            System.out.println("\033[31m\033[47m¡El Programa ha sido FINALIZADO! :c");
+            System.exit(0);
+        }
+                
+        int comprension, matematicas, quimica, fisica, tecnologia, ef, ingles, autoconocimiento;
+                    System.out.println("\033[34m\033[47m Promedio de Comprensión:      ");
+                        
+                if(opcion == 1){
+                    comprension = teclado.nextInt();
+                    System.out.println("\033[34m\033[47m Promedio de Matemáticas:      ");
+                        matematicas = teclado.nextInt();
+		if(matematicas <= 100){
+                    System.out.println("\033[34m\033[47m Promedio de Química:          ");
+                        quimica = teclado.nextInt();
+		if(quimica <= 100){
+                    System.out.println("\033[34m\033[47m Promedio de Física:           ");
+                        fisica = teclado.nextInt();
+                if(fisica <= 100){
+                    System.out.println("\033[34m\033[47m Promedio de Tecnología:       ");
+                        tecnologia = teclado.nextInt();
+		if(tecnologia <= 100){
+                    System.out.println("\033[34m\033[47m Promedio de Educación física: ");
+                        ef = teclado.nextInt();
+		if(ef <= 100){
+                    System.out.println("\033[34m\033[47m Promedio de Inglés:           ");
+                        ingles = teclado.nextInt();
+		if(ingles <= 100){
+                    System.out.println("\033[34m\033[47m Promedió de Autoconocimiento: ");
+                        autoconocimiento = teclado.nextInt();
+		if(autoconocimiento <= 100){
+            
+            int sumatotal = comprension + matematicas + quimica + fisica + tecnologia + ef + ingles + autoconocimiento; 
+            int promedio = sumatotal/8;     
+
+            System.out.println("\033[46m\033[37mSu promedio total es de:\n" + promedio);         
+            
+        switch(comprension){
+            case 100:
+        }
+        
+        if(promedio == 100){
+            System.out.println("\033[30m\033[42mFELICIDADES, tu calificación es perfecta. ☻ ");
+}
+        if(promedio <= 99 && promedio >=90){
+            System.out.println("\033[30m\033[42m WoW, tu calificacion es muy buena. ☺");													
+} 
+        if(promedio <= 89 && promedio >=80){
+            System.out.println("\033[30m\033[42m No esta mal tu calificación, esfuérzate mas. ☺");													
+}  
+        if(promedio <= 79 && promedio >=70){
+            System.out.println("\033[30m\033[42m Tu calificación no es del todo buena, cuidado. ");													
+}  
+        if(promedio <= 69 && promedio >=60){
+            System.out.println("\033[30m\033[42m¡Cuidado! estás a punto de reprobar. ");													
+} 
+        if(promedio <= 59 && promedio >=0){
+            System.out.println("\033[37m\033[41mREPROBASTE por tonto, te dijimos gil. ");													
+}
+
+        } else{
+                System.out.println("Calificacion invalida\n Inserte otra:");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Calificacion invalida");
+                }
+        } else{
+                System.out.println("Opcion Incorrecta");
+        }
+    }
+}
